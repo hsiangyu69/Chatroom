@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.chocolabs.chatroom"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.google.firebase:firebase-messaging:9.0.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:palette-v7:23.4.0'
+    compile 'com.firebase:firebase-client-android:2.5.2+'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    //加在這裡，如下
+    // Google
+    compile 'com.google.android.gms:play-services-auth:9.0.0'   //提供 Firebase 做 OAuth 登入用的
+
+    // Firebase
+    compile 'com.google.firebase:firebase-database:9.0.0'   // 這次聊天主要都靠這個 Library
+    compile 'com.google.firebase:firebase-auth:9.0.0'       // 幫助做使用者登入驗證
+    compile 'com.google.firebase:firebase-config:9.0.0'     // 這次遠端變色就靠他了
+    compile 'com.google.firebase:firebase-analytics:9.0.0'  // 使用者行為分析，這次並沒有用到
+    compile 'com.google.android.gms:play-services-appinvite:9.0.0'  // 幫助寄送邀請的，這次並沒有用到
+    compile 'com.google.firebase:firebase-messaging:9.0.0'      // 做推播的，這次並沒有用到
+    compile 'com.google.android.gms:play-services-ads:9.0.0'    // 做廣告的，這次並沒有用到
+    compile 'com.google.firebase:firebase-crash:9.0.0'      // 當機報告，這次並沒有用到
+
+    // Firebase UI
+    compile 'com.firebaseui:firebase-ui-database:0.4.0'     //訊息和使用者列表的元件
+    //到這為止
+}
+apply plugin: 'com.google.gms.google-services'

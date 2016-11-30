@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "19710765931",
+    "firebase_url": "https://chatroom-b80cf.firebaseio.com",
+    "project_id": "chatroom-b80cf",
+    "storage_bucket": "chatroom-b80cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19710765931:android:d233daa69ce88c3c",
+        "android_client_info": {
+          "package_name": "com.chocolabs.chatroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19710765931-j4qq1nf5sih2u0gsa8ippmn54j1a79o5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chocolabs.chatroom",
+            "certificate_hash": "888537FB8281968E1288F5572CE52E194E5B3B6C"
+          }
+        },
+        {
+          "client_id": "19710765931-qreeme7296dfibl4dgj4pch3865smd71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuh_Op8XM8x8JwWYn6xQAqtXcZlJNpcLY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19710765931-qreeme7296dfibl4dgj4pch3865smd71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
